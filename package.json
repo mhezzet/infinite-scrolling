@@ -1,0 +1,16 @@
+{
+  "name": "infinite-scrolling",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"npm start --workspace=server\" \"npm start --workspace=client\""
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

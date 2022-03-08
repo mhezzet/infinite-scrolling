@@ -1,0 +1,74 @@
+.products {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.title {
+  text-align: center;
+  font-size: 45px;
+}
+
+.sortContainer {
+  padding: 25px 20px 0px 20px;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px 20px;
+}
+
+.card {
+  background: white;
+  box-shadow: 0.4px 0.8px 0.8px hsl(0deg 0% 0% / 0.49);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.card:hover {
+  box-shadow: 0.8px 1.6px 1.6px hsl(0deg 0% 0% / 0.48);
+}
+
+.card:active {
+  box-shadow: 0.4px 0.8px 0.8px hsl(0deg 0% 0% / 0.49);
+}
+
+.cardFace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray;
+  height: 150px;
+  font-size: 42px;
+  padding: 5px;
+}
+
+.cardFace > p {
+  margin: 0;
+  text-align: center;
+}
+
+.cardContent {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  gap: 5px;
+}
+
+.cardContent > p {
+  font-weight: 500;
+  margin: 0;
+}
+
+.noMore {
+  text-align: center;
+  padding: 10px;
+}
